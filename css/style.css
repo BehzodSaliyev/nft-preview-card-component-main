@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 18px;
+}
+
+.blanket {
+    background: var(--very-dark-blue-main);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blanket-wrapper {
+    background: var(--very-dark-blue-card);
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 0 100px var(--very-dark-blue-card);
+    max-height: 90%;
+    max-width: 350px;
+}
+
+.blanket-image img {
+    border-radius: 15px;
+    width: 100%;
+}
+.blanket-image img:hover {
+    background-color: var(--cyan);
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.blanket-description {
+    margin: 15px auto;
+}
+
+.blanket-description__title {
+    margin-bottom: 15px;
+}
+
+.blanket-description__title h1 {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.blanket-description__title h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.blanket-description__content {
+    color: var(--soft-blue);
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.blanket-description__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px auto;
+}
+
+.crypto-pointer {
+    display: flex;
+    align-items: center;
+}
+
+.crypto-pointer span {
+    color: var(--cyan);
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.deadline {
+    display: flex;
+    align-items: center;
+}
+
+.deadline span {
+    color: var(--soft-blue);
+    margin-left: 5px;
+}
+
+.blanket-author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.blanket-author img {
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 10px 20px 10px 0px;
+}
+
+.blanket-author p {
+    color: var(--soft-blue);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.blanket-author span {
+    color: var(--white);
+    font-weight: 400;
+}
+
+.blanket-author span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+hr {
+    opacity: 0.5;
+    margin: 15px 0;
+}
